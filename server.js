@@ -6,7 +6,13 @@ const cors = require('cors')
 app.use(express.json())
 app.use(cors())
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/index.html'))
+})
 
+app.get('/js', (req, res) => {
+    res.sendFile(path.join(__dirname, '/frontend.js'))
+})
 
 
 const port = process.env.PORT || 5050
