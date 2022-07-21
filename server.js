@@ -19,6 +19,7 @@ app.get('/testroute', (req, res) => {
 })
 
 app.get('/press-me-button', (req, res) => {
+    rollbar.info('Someone pressed the button')
     res.send('Autosave is OP')
 })
 
