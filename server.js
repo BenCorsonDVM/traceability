@@ -18,6 +18,13 @@ app.get('/testroute', (req, res) => {
     res.send({'Success': true})
 })
 
+app.get('/press-me-button', (req, res) => {
+    res.send('Autosave is OP')
+})
+
+
+
+
 
 const port = process.env.PORT || 5050
 
