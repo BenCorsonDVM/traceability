@@ -14,6 +14,10 @@ app.get('/js', (req, res) => {
     res.sendFile(path.join(__dirname, '/frontend.js'))
 })
 
+app.get('/testroute', (req, res) => {
+    res.send({'Success': true})
+})
+
 
 const port = process.env.PORT || 5050
 
